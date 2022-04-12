@@ -1,0 +1,243 @@
+2022-04-12 17:09:31,346:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2022-04-12 17:09:31,347:DEBUG:discord.client: on_ready has successfully been registered as an event
+2022-04-12 17:09:31,347:DEBUG:discord.client: on_message has successfully been registered as an event
+2022-04-12 17:09:31,349:INFO:discord.client: logging in using static token
+2022-04-12 17:09:31,992:DEBUG:discord.http: GET https://discord.com/api/v7/users/@me with None has returned 200
+2022-04-12 17:09:31,993:DEBUG:discord.http: GET https://discord.com/api/v7/users/@me has received {'id': '961807576654282822', 'username': 'faust', 'avatar': None, 'discriminator': '7540', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'accent_color': None, 'bio': '', 'pronouns': '', 'locale': 'en-US', 'mfa_enabled': False, 'email': None, 'verified': True}
+2022-04-12 17:09:32,029:DEBUG:discord.http: GET https://discord.com/api/v7/gateway with None has returned 200
+2022-04-12 17:09:32,030:DEBUG:discord.http: GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+2022-04-12 17:09:32,250:DEBUG:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2022-04-12 17:09:32,251:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:09:32,252:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-gp3z",{"micros":0.0}]']}}
+2022-04-12 17:09:32,252:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:09:32,253:DEBUG:discord.client: Dispatching event socket_raw_send
+2022-04-12 17:09:32,256:DEBUG:discord.client: Dispatching event socket_raw_send
+2022-04-12 17:09:32,257:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2022-04-12 17:09:32,387:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:09:32,387:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:09:32,388:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:09:32,479:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:09:32,480:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'faust', 'mfa_enabled': False, 'id': '961807576654282822', 'flags': 0, 'email': None, 'discriminator': '7540', 'bot': True, 'avatar': None}, 'session_id': 'a91991f5d7135be5245bac33405d491f', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '961810350909575278'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['brazil', 'buenos-aires', 'santiago', 'southafrica', 'atlanta'], 'application': {'id': '961807576654282822', 'flags': 262144}, '_trace': ['["gateway-prd-main-gp3z",{"micros":88711,"calls":["discord-sessions-blue-prd-2-79",{"micros":87438,"calls":["start_session",{"micros":45089,"calls":["discord-api-84bdd498d-npwdf",{"micros":40137,"calls":["get_user",{"micros":7616},"add_authorized_ip",{"micros":1969},"get_guilds",{"micros":4935},"coros_wait",{"micros":3}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":26015,"calls":[]}]}]}]']}}
+2022-04-12 17:09:32,480:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:09:32,481:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-gp3z",{"micros":88711,"calls":["discord-sessions-blue-prd-2-79",{"micros":87438,"calls":["start_session",{"micros":45089,"calls":["discord-api-84bdd498d-npwdf",{"micros":40137,"calls":["get_user",{"micros":7616},"add_authorized_ip",{"micros":1969},"get_guilds",{"micros":4935},"coros_wait",{"micros":3}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":26015,"calls":[]}]}]}] (Session ID: a91991f5d7135be5245bac33405d491f).
+2022-04-12 17:09:32,537:DEBUG:discord.client: Dispatching event connect
+2022-04-12 17:09:32,538:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:09:32,539:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'rules_channel_id': None, 'mfa_level': 0, 'name': 'servidor de nivekssl', 'default_message_notifications': 0, 'vanity_url_code': None, 'system_channel_id': '961810350909575281', 'region': 'deprecated', 'premium_progress_bar_enabled': False, 'public_updates_channel_id': None, 'premium_tier': 0, 'member_count': 2, 'verification_level': 0, 'emojis': [], 'splash': None, 'system_channel_flags': 0, 'owner_id': '908374894838951968', 'afk_channel_id': None, 'premium_subscription_count': 0, 'unavailable': False, 'discovery_splash': None, 'guild_scheduled_events': [], 'roles': [{'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions_new': '1071698660929', 'permissions': 104320577, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '961810350909575278', 'icon': None, 'hoist': False, 'color': 0}, {'unicode_emoji': None, 'tags': {'bot_id': '961807576654282822'}, 'position': 1, 'permissions_new': '259846043712', 'permissions': 522304, 'name': 'faust', 'mentionable': False, 'managed': True, 'id': '961810628736081923', 'icon': None, 'hoist': False, 'color': 0}], 'afk_timeout': 300, 'description': None, 'stage_instances': [], 'members': [{'user': {'username': 'faust', 'id': '961807576654282822', 'discriminator': '7540', 'bot': True, 'avatar': None}, 'roles': ['961810628736081923'], 'mute': False, 'joined_at': '2022-04-08T02:12:03.524000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}], 'channels': [{'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '961810350909575279'}, {'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '961810350909575280'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '961810350909575279', 'name': 'general', 'last_message_id': '963144233026465882', 'id': '961810350909575281'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '961810350909575280', 'name': 'General', 'last_message_id': None, 'id': '961810350909575282', 'bitrate': 64000}, {'type': 0, 'topic': 'Este é um bom lugar para falar sobre meu', 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [], 'parent_id': '961810350909575279', 'name': 'meu', 'last_message_id': '962029195834314752', 'id': '961810388570234932'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 2, 'permission_overwrites': [], 'parent_id': '961810350909575279', 'name': 'outro', 'last_message_id': '963530857715474442', 'id': '962381919490814002'}], 'threads': [], 'hub_type': None, 'banner': None, 'voice_states': [], 'stickers': [], 'icon': None, 'preferred_locale': 'en-US', 'nsfw_level': 0, 'features': [], 'id': '961810350909575278', 'embedded_activities': [], 'presences': [], 'nsfw': False, 'large': False, 'application_command_counts': {'3': 0, '2': 0, '1': 0}, 'max_members': 500000, 'joined_at': '2022-04-08T02:12:03.524000+00:00', 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': 'Z+bisq27azc'}, 'metadata': {'omitted': False, 'hash': 'YLcR46V6tnw'}, 'channels': {'omitted': False, 'hash': 'qqNx1jeifPo'}}, 'max_video_channel_users': 25, 'explicit_content_filter': 0, 'lazy': True, 'application_id': None}}
+2022-04-12 17:09:32,540:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:09:32,542:DEBUG:discord.client: Dispatching event guild_available
+2022-04-12 17:09:34,547:DEBUG:discord.client: Dispatching event ready
+2022-04-12 17:09:40,235:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:09:40,236:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 3, 'op': 0, 'd': {'user_id': '908374894838951968', 'timestamp': 1649794178, 'member': {'user': {'username': 'nivekssl', 'id': '908374894838951968', 'discriminator': '8305', 'avatar': None}, 'roles': [], 'mute': False, 'joined_at': '2022-04-08T02:10:57.246000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}, 'channel_id': '962381919490814002', 'guild_id': '961810350909575278'}}
+2022-04-12 17:09:40,237:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:09:40,238:DEBUG:discord.client: Dispatching event typing
+2022-04-12 17:09:43,345:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:09:43,346:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 4, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2022-04-12T20:09:41.184000+00:00', 'referenced_message': None, 'pinned': False, 'nonce': '969702154782638080', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2022-04-08T02:10:57.246000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}, 'id': '963531374315323492', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'solidão', 'components': [], 'channel_id': '962381919490814002', 'author': {'username': 'nivekssl', 'public_flags': 0, 'id': '908374894838951968', 'discriminator': '8305', 'avatar': None}, 'attachments': [], 'guild_id': '961810350909575278'}}
+2022-04-12 17:09:43,347:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:09:43,349:DEBUG:discord.client: Dispatching event message
+2022-04-12 17:09:43,552:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:09:43,553:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 5, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2022-04-12T20:09:41.681000+00:00', 'referenced_message': None, 'pinned': False, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['961810628736081923'], 'mute': False, 'joined_at': '2022-04-08T02:12:03.524000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}, 'id': '963531376399888464', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'nivekssl, Ser feliz sem motivo é a mais autêntica forma de felicidade.Quase sempre a maior ou menor felicidade depende do grau de decisão de ser feliz', 'components': [], 'channel_id': '962381919490814002', 'author': {'username': 'faust', 'public_flags': 0, 'id': '961807576654282822', 'discriminator': '7540', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '961810350909575278'}}
+2022-04-12 17:09:43,554:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:09:43,555:DEBUG:discord.client: Dispatching event message
+2022-04-12 17:09:43,571:DEBUG:discord.http: POST https://discord.com/api/v7/channels/962381919490814002/messages with {"content":"nivekssl, Ser feliz sem motivo \u00e9 a mais aut\u00eantica forma de felicidade.Quase sempre a maior ou menor felicidade depende do grau de decis\u00e3o de ser feliz"} has returned 200
+2022-04-12 17:09:43,796:DEBUG:discord.http: POST https://discord.com/api/v7/channels/962381919490814002/messages has received {'id': '963531376399888464', 'type': 0, 'content': 'nivekssl, Ser feliz sem motivo é a mais autêntica forma de felicidade.Quase sempre a maior ou menor felicidade depende do grau de decisão de ser feliz', 'channel_id': '962381919490814002', 'author': {'id': '961807576654282822', 'username': 'faust', 'avatar': None, 'discriminator': '7540', 'public_flags': 0, 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2022-04-12T20:09:41.681000+00:00', 'edited_timestamp': None, 'flags': 0, 'components': [], 'referenced_message': None}
+2022-04-12 17:09:59,863:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:09:59,864:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 6, 'op': 0, 'd': {'user_id': '908374894838951968', 'timestamp': 1649794198, 'member': {'user': {'username': 'nivekssl', 'id': '908374894838951968', 'discriminator': '8305', 'avatar': None}, 'roles': [], 'mute': False, 'joined_at': '2022-04-08T02:10:57.246000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}, 'channel_id': '962381919490814002', 'guild_id': '961810350909575278'}}
+2022-04-12 17:09:59,864:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:09:59,866:DEBUG:discord.client: Dispatching event typing
+2022-04-12 17:10:10,111:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:10:10,112:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 7, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2022-04-12T20:10:08.222000+00:00', 'referenced_message': None, 'pinned': False, 'nonce': '969702267840102400', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': [], 'mute': False, 'joined_at': '2022-04-08T02:10:57.246000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}, 'id': '963531487720902717', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '%id: nivekssl', 'components': [], 'channel_id': '962381919490814002', 'author': {'username': 'nivekssl', 'public_flags': 0, 'id': '908374894838951968', 'discriminator': '8305', 'avatar': None}, 'attachments': [], 'guild_id': '961810350909575278'}}
+2022-04-12 17:10:10,112:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:10:10,113:DEBUG:discord.client: Dispatching event message
+2022-04-12 17:10:10,584:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:10:10,585:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 8, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2022-04-12T20:10:08.573000+00:00', 'referenced_message': None, 'pinned': False, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['961810628736081923'], 'mute': False, 'joined_at': '2022-04-08T02:12:03.524000+00:00', 'hoisted_role': None, 'flags': 0, 'deaf': False}, 'id': '963531489193111602', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '3942890696', 'components': [], 'channel_id': '962381919490814002', 'author': {'username': 'faust', 'public_flags': 0, 'id': '961807576654282822', 'discriminator': '7540', 'bot': True, 'avatar': None}, 'attachments': [], 'guild_id': '961810350909575278'}}
+2022-04-12 17:10:10,585:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:10:10,586:DEBUG:discord.client: Dispatching event message
+2022-04-12 17:10:10,590:DEBUG:discord.http: POST https://discord.com/api/v7/channels/962381919490814002/messages with {"content":"3942890696"} has returned 200
+2022-04-12 17:10:10,591:DEBUG:discord.http: POST https://discord.com/api/v7/channels/962381919490814002/messages has received {'id': '963531489193111602', 'type': 0, 'content': '3942890696', 'channel_id': '962381919490814002', 'author': {'id': '961807576654282822', 'username': 'faust', 'avatar': None, 'discriminator': '7540', 'public_flags': 0, 'bot': True}, 'attachments': [], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2022-04-12T20:10:08.573000+00:00', 'edited_timestamp': None, 'flags': 0, 'components': [], 'referenced_message': None}
+2022-04-12 17:10:13,506:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 8.
+2022-04-12 17:10:13,640:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:10:13,640:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:10:13,641:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:10:54,772:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 8.
+2022-04-12 17:10:55,003:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:10:55,010:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:10:55,011:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:11:36,084:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 8.
+2022-04-12 17:11:36,288:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:11:36,298:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:11:36,299:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:12:17,419:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 8.
+2022-04-12 17:12:17,742:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:12:17,748:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:12:17,748:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:12:58,729:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 8.
+2022-04-12 17:12:59,144:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:12:59,148:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:12:59,148:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:13:40,017:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 8.
+2022-04-12 17:13:40,493:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:13:40,495:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:13:40,496:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:14:35,518:DEBUG:discord.gateway: Received WSMessage(type=<WSMsgType.CLOSE: 8>, data=1000, extra='')
+2022-04-12 17:14:35,525:INFO:discord.gateway: Websocket closed with 1000, cannot reconnect.
+2022-04-12 17:14:35,529:DEBUG:discord.client: Dispatching event disconnect
+2022-04-12 17:14:35,531:ERROR:discord.client: Attempting a reconnect in 1.48s
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.10/site-packages/discord/client.py", line 566, in connect
+    await self.ws.poll_event()
+  File "/data/data/com.termux/files/usr/lib/python3.10/site-packages/discord/gateway.py", line 582, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2022-04-12 17:14:52,560:DEBUG:discord.http: GET https://discord.com/api/v7/gateway with None has returned 200
+2022-04-12 17:14:52,562:DEBUG:discord.http: GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+2022-04-12 17:14:53,008:DEBUG:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2022-04-12 17:14:53,009:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:14:53,010:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-tk37",{"micros":0.0}]']}}
+2022-04-12 17:14:53,011:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:14:53,013:DEBUG:discord.client: Dispatching event socket_raw_send
+2022-04-12 17:14:53,016:DEBUG:discord.client: Dispatching event socket_raw_send
+2022-04-12 17:14:53,018:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2022-04-12 17:14:53,415:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:14:53,416:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:14:53,417:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:14:53,417:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:14:53,418:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'RESUMED', 's': 9, 'op': 0, 'd': {'_trace': ['["gateway-prd-main-tk37",{"micros":2641,"calls":["discord-sessions-blue-prd-2-79",{"micros":19}]}]']}}
+2022-04-12 17:14:53,418:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:14:53,419:INFO:discord.gateway: Shard ID None has successfully RESUMED session a91991f5d7135be5245bac33405d491f under trace ["gateway-prd-main-tk37",{"micros":2641,"calls":["discord-sessions-blue-prd-2-79",{"micros":19}]}].
+2022-04-12 17:14:53,419:DEBUG:discord.client: Dispatching event resumed
+2022-04-12 17:15:48,431:DEBUG:discord.gateway: Received WSMessage(type=<WSMsgType.CLOSE: 8>, data=1000, extra='')
+2022-04-12 17:15:48,432:INFO:discord.gateway: Websocket closed with 1000, cannot reconnect.
+2022-04-12 17:15:48,433:DEBUG:discord.client: Dispatching event disconnect
+2022-04-12 17:15:48,434:ERROR:discord.client: Attempting a reconnect in 1.91s
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.10/site-packages/discord/client.py", line 566, in connect
+    await self.ws.poll_event()
+  File "/data/data/com.termux/files/usr/lib/python3.10/site-packages/discord/gateway.py", line 582, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2022-04-12 17:16:09,408:DEBUG:discord.http: GET https://discord.com/api/v7/gateway with None has returned 200
+2022-04-12 17:16:09,409:DEBUG:discord.http: GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+2022-04-12 17:16:09,648:DEBUG:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2022-04-12 17:16:09,649:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:16:09,649:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-8vz3",{"micros":0.0}]']}}
+2022-04-12 17:16:09,649:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:16:09,651:DEBUG:discord.client: Dispatching event socket_raw_send
+2022-04-12 17:16:09,655:DEBUG:discord.client: Dispatching event socket_raw_send
+2022-04-12 17:16:09,657:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2022-04-12 17:16:09,786:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:16:09,787:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:16:09,788:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:16:09,863:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:16:09,864:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'RESUMED', 's': 10, 'op': 0, 'd': {'_trace': ['["gateway-prd-main-8vz3",{"micros":15865,"calls":["discord-sessions-blue-prd-2-79",{"micros":16}]}]']}}
+2022-04-12 17:16:09,864:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:16:09,865:INFO:discord.gateway: Shard ID None has successfully RESUMED session a91991f5d7135be5245bac33405d491f under trace ["gateway-prd-main-8vz3",{"micros":15865,"calls":["discord-sessions-blue-prd-2-79",{"micros":16}]}].
+2022-04-12 17:16:09,865:DEBUG:discord.client: Dispatching event resumed
+2022-04-12 17:17:05,331:DEBUG:discord.gateway: Received WSMessage(type=<WSMsgType.CLOSE: 8>, data=1000, extra='')
+2022-04-12 17:17:05,332:INFO:discord.gateway: Websocket closed with 1000, cannot reconnect.
+2022-04-12 17:17:05,333:DEBUG:discord.client: Dispatching event disconnect
+2022-04-12 17:17:05,334:ERROR:discord.client: Attempting a reconnect in 6.72s
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.10/site-packages/discord/client.py", line 566, in connect
+    await self.ws.poll_event()
+  File "/data/data/com.termux/files/usr/lib/python3.10/site-packages/discord/gateway.py", line 582, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2022-04-12 17:17:31,382:DEBUG:discord.http: GET https://discord.com/api/v7/gateway with None has returned 200
+2022-04-12 17:17:31,383:DEBUG:discord.http: GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+2022-04-12 17:17:32,017:DEBUG:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2022-04-12 17:17:32,018:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:17:32,018:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-qj3j",{"micros":0.0}]']}}
+2022-04-12 17:17:32,019:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:17:32,020:DEBUG:discord.client: Dispatching event socket_raw_send
+2022-04-12 17:17:32,023:DEBUG:discord.client: Dispatching event socket_raw_send
+2022-04-12 17:17:32,026:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2022-04-12 17:17:32,172:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:17:32,173:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:17:32,174:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:17:32,175:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:17:32,176:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'RESUMED', 's': 11, 'op': 0, 'd': {'_trace': ['["gateway-prd-main-qj3j",{"micros":739,"calls":["discord-sessions-blue-prd-2-79",{"micros":22}]}]']}}
+2022-04-12 17:17:32,176:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:17:32,176:INFO:discord.gateway: Shard ID None has successfully RESUMED session a91991f5d7135be5245bac33405d491f under trace ["gateway-prd-main-qj3j",{"micros":739,"calls":["discord-sessions-blue-prd-2-79",{"micros":22}]}].
+2022-04-12 17:17:32,177:DEBUG:discord.client: Dispatching event resumed
+2022-04-12 17:18:30,739:DEBUG:discord.gateway: Received WSMessage(type=<WSMsgType.CLOSE: 8>, data=1000, extra='')
+2022-04-12 17:18:30,741:INFO:discord.gateway: Websocket closed with 1000, cannot reconnect.
+2022-04-12 17:18:30,742:DEBUG:discord.client: Dispatching event disconnect
+2022-04-12 17:18:30,742:ERROR:discord.client: Attempting a reconnect in 8.98s
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.10/site-packages/discord/client.py", line 566, in connect
+    await self.ws.poll_event()
+  File "/data/data/com.termux/files/usr/lib/python3.10/site-packages/discord/gateway.py", line 582, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2022-04-12 17:19:29,209:DEBUG:discord.http: GET https://discord.com/api/v7/gateway with None has returned 200
+2022-04-12 17:19:29,211:DEBUG:discord.http: GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+2022-04-12 17:19:29,426:DEBUG:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2022-04-12 17:19:29,427:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:19:29,427:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-rswq",{"micros":0.0}]']}}
+2022-04-12 17:19:29,428:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:19:29,429:DEBUG:discord.client: Dispatching event socket_raw_send
+2022-04-12 17:19:29,432:DEBUG:discord.client: Dispatching event socket_raw_send
+2022-04-12 17:19:29,433:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2022-04-12 17:19:29,573:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:19:29,574:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:19:29,575:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:19:29,575:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:19:29,576:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'RESUMED', 's': 12, 'op': 0, 'd': {'_trace': ['["gateway-prd-main-rswq",{"micros":679,"calls":["discord-sessions-blue-prd-2-79",{"micros":17}]}]']}}
+2022-04-12 17:19:29,577:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:19:29,577:INFO:discord.gateway: Shard ID None has successfully RESUMED session a91991f5d7135be5245bac33405d491f under trace ["gateway-prd-main-rswq",{"micros":679,"calls":["discord-sessions-blue-prd-2-79",{"micros":17}]}].
+2022-04-12 17:19:29,577:DEBUG:discord.client: Dispatching event resumed
+2022-04-12 17:20:24,821:DEBUG:discord.gateway: Received WSMessage(type=<WSMsgType.CLOSE: 8>, data=1000, extra='')
+2022-04-12 17:20:24,823:INFO:discord.gateway: Websocket closed with 1000, cannot reconnect.
+2022-04-12 17:20:24,824:DEBUG:discord.client: Dispatching event disconnect
+2022-04-12 17:20:24,826:ERROR:discord.client: Attempting a reconnect in 30.51s
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.10/site-packages/discord/client.py", line 566, in connect
+    await self.ws.poll_event()
+  File "/data/data/com.termux/files/usr/lib/python3.10/site-packages/discord/gateway.py", line 582, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2022-04-12 17:21:12,147:DEBUG:discord.http: GET https://discord.com/api/v7/gateway with None has returned 200
+2022-04-12 17:21:12,153:DEBUG:discord.http: GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+2022-04-12 17:21:12,361:DEBUG:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2022-04-12 17:21:12,362:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:21:12,364:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-gs9q",{"micros":0.0}]']}}
+2022-04-12 17:21:12,364:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:21:12,366:DEBUG:discord.client: Dispatching event socket_raw_send
+2022-04-12 17:21:12,371:DEBUG:discord.client: Dispatching event socket_raw_send
+2022-04-12 17:21:12,373:INFO:discord.gateway: Shard ID None has sent the RESUME payload.
+2022-04-12 17:21:12,498:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:21:12,498:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:21:12,499:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:21:12,504:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:21:12,504:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'RESUMED', 's': 13, 'op': 0, 'd': {'_trace': ['["gateway-prd-main-gs9q",{"micros":1782,"calls":["discord-sessions-blue-prd-2-79",{"micros":17}]}]']}}
+2022-04-12 17:21:12,506:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:21:12,506:INFO:discord.gateway: Shard ID None has successfully RESUMED session a91991f5d7135be5245bac33405d491f under trace ["gateway-prd-main-gs9q",{"micros":1782,"calls":["discord-sessions-blue-prd-2-79",{"micros":17}]}].
+2022-04-12 17:21:12,507:DEBUG:discord.client: Dispatching event resumed
+2022-04-12 17:21:53,628:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 13.
+2022-04-12 17:21:53,812:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:21:53,816:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:21:53,817:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:22:34,900:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 13.
+2022-04-12 17:22:35,108:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:22:35,113:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:22:35,114:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:23:16,201:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 13.
+2022-04-12 17:23:16,410:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:23:16,417:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:23:16,418:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:23:57,489:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 13.
+2022-04-12 17:23:57,652:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:23:57,654:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:23:57,654:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:24:38,744:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 13.
+2022-04-12 17:24:38,889:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:24:38,890:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:24:38,891:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:25:20,009:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 13.
+2022-04-12 17:25:20,203:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:25:20,206:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:25:20,207:DEBUG:discord.client: Dispatching event socket_response
+2022-04-12 17:26:01,288:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 13.
+2022-04-12 17:26:01,461:DEBUG:discord.client: Dispatching event socket_raw_receive
+2022-04-12 17:26:01,462:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2022-04-12 17:26:01,463:DEBUG:discord.client: Dispatching event socket_response
