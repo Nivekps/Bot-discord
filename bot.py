@@ -1,6 +1,8 @@
 import discord
 import logging
 from random import choice
+
+#Linhas de código para mostar erros do código 
 logger = logging.getLogger('discord')
 logger.setLevel(logging.DEBUG)
 handler = logging.FileHandler(
@@ -9,6 +11,7 @@ handler.setFormatter(logging.Formatter(
     '%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
 logger.addHandler(handler)
 
+#Início do bot - discord
 client = discord.Client()
 
 alegrar = ["Ser feliz sem motivo é a mais autêntica forma de felicidade."
