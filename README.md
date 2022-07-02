@@ -8,6 +8,6 @@ Bot simples para o discord
 3 - Quando verifica que o usuário envio uma mensagem ofensiva no channel, o bot avisa que esse tipo de comentário não é permitido 
 
 4 - por meio da Covid19 API, foi os seguintes comandos:
-    4.1 - !covid_estado <sigla do estado>
-    4.2 - !covid_pais <nome do pais> 
+    <br />4.1 - !covid_estado <sigla do estado><br />
+    4.2 - !covid_pais <nome do pais>
     
