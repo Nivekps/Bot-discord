@@ -4,7 +4,10 @@ import logging
 from random import choice
 import json
 import requests
+
+
 #Linhas de código para mostar erros do código 
+
 logger = logging.getLogger('discord')
 logger.setLevel(logging.DEBUG)
 handler = logging.FileHandler(
@@ -13,7 +16,9 @@ handler.setFormatter(logging.Formatter(
     '%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
 logger.addHandler(handler)
 
+
 #Início do bot - discord
+
 bot = commands.Bot(command_prefix="!")
 
 alegrar = ["Ser feliz sem motivo é a mais autêntica forma de felicidade."
@@ -41,6 +46,8 @@ async def on_message(message):
 
     if msg in ofensa:
         await message.channel.send(f"{user}, atitudes derespeitosas não são permitidas.")
+
+
 @bot.command()
 async def covid_estado(ctx, sigla_estado):
     resp = requests.get("https://covid19-brazil-api.now.sh/api/report  /v1/brazil/uf/{}".format(sigla_estado))
@@ -48,6 +55,8 @@ async def covid_estado(ctx, sigla_estado):
     for a, b in json_data.items():
        await ctx.send(f"Casos de covid em {sigla_estado}")
        await ctx.send(f"{a}: {b}")
+
+
 @bot.command()
 async def covid_pais(ctx, sigla_pais):
     resp = requests.get("https://covid19-brazil-api.now.sh/api/report  /v1/{}".format(sigla_pais))
