@@ -3,7 +3,7 @@ Bot simples para o discord
 
  1 - Quando o usuário envia "%oi", o bot responde: "oi, nome.do.usuario"
 
-2 - Envia uma mensagem inspiradora para o usuário quando requisitando 
+2 - Envia uma mensagem inspiradora para o usuário quando requisitado 
 
 3 - Quando verifica que o usuário envio uma mensagem ofensiva no channel, o bot avisa que esse tipo de comentário não é permitido 
 
