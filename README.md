@@ -1,5 +1,5 @@
 # Bot-discord
-Bot simples para o discord 
+Bot básica para o discord 
 
  1 - Quando o usuário envia "%oi", o bot responde: "oi, nome.do.usuario"
 
